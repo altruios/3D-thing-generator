@@ -125,7 +125,7 @@ for i in range(0, size, skips):
   for p in range(0, factorMax - factorChar):
       print(" ", end="")
   print(str(i + 1), end= "")
-  print(" /", str(size) + " | " + str(int(((i + 1) * 1000) / (size)) / 10) + "%")
+  print(" /", str(size) + " | " + str(int(((i + 1) * 1000) / (size)) / 10) + "%", end="\r")
 print("Compiling Image")
 name = ("set " + str(oj) + " + " + str(oi) + "i" + ".png")
 
